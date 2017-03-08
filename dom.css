@@ -1,0 +1,126 @@
+html{
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.left{
+  text-align: left;
+  margin: 0.3em 0em;
+}
+
+h2{margin-top: 0em;}
+
+#content{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+
+#widgets-left{float: left;width: 20%;
+    margin: 0 auto;}
+#widgets-right{float: right;width: 20%;
+    margin: 0 auto;}
+#page{float: left; width: 60%;
+    margin: 0 auto;}
+
+ul {
+  padding: 0em;
+  margin: 1.5em 0em;
+}
+
+li {
+    list-style-type: none;
+  }
+
+.info, .cinema, .legend, .customer{
+  border: 1px solid #b5b0b0;
+  text-align: center;
+  margin: 5px;
+  padding: 4px 4px;
+  border-radius: 2%;
+}
+
+.cinema{padding-bottom: 52px;}
+
+.free{background-color: skyblue;cursor: pointer;}
+.booked{background-color: grey;cursor:not-allowed;}
+.mine{background-color: orange;cursor: pointer;}
+
+
+.free, .booked, .mine{
+	width: 32px;
+	height: 32px;
+  font-size: 10px;
+  padding: 0;
+  padding-top: 5px;
+}
+
+th{padding: 0.5em;}
+
+/* Seats */
+td.left-sofa.free{background:url('./img/left-sofa-free.png');}
+td.right-sofa.free{background:url('./img/right-sofa-free.png');}
+td.armchair.free{background:url('./img/armchair-free.png');}
+
+td.left-sofa.booked{background:url('./img/left-sofa-booked.png');}
+td.right-sofa.booked{background:url('./img/right-sofa-booked.png');}
+td.armchair.booked{background:url('./img/armchair-booked.png');}
+
+td.left-sofa.mine{background:url('./img/left-sofa-mine.png');}
+td.right-sofa.mine{background:url('./img/right-sofa-mine.png');}
+td.armchair.mine{background:url('./img/armchair-mine.png');}
+
+td.left-sofa.free, td.right-sofa.free, td.armchair.free,
+td.left-sofa.booked, td.right-sofa.booked, td.armchair.booked,
+td.left-sofa.mine, td.right-sofa.mine, td.armchair.mine{
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#cinema-screen{
+  width: 400px;
+  height: 25px;
+  padding: 1em;
+  margin-top: 3em;
+  margin-left:auto;
+  margin-right: auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/* For the legend */
+#left-sofa-free{background:url('./img/left-sofa-free.png');}
+#armchair-free{background:url('./img/armchair-free.png');}
+#left-sofa-booked{background:url('./img/left-sofa-booked.png');}
+#left-sofa-mine{background:url('./img/left-sofa-mine.png');}
+
+#left-sofa-free, #armchair-free, #left-sofa-booked, #left-sofa-mine{
+	width: 32px;
+	height: 32px;
+  text-align:center;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.errorMsg {
+  padding-top: 0.5em;
+  text-align: center;
+  color: #F44336;
+  font-weight: bold;
+  font-size: 11px;
+  }
+
+  button.button:disabled, button.button  {
+    padding: 0.7em;
+    color: white;
+    border: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+button.button:disabled{background: #c3c3c3;}
+
+button.button {background: #00a2e8;}

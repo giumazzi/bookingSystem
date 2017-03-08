@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Coursework 1 - Adrian Vazquez</title>
+    <script src=//code.jquery.com/jquery-3.1.1.min.js></script>
+    <script src=dom.js></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans" rel="stylesheet">
+    <link rel=stylesheet href=dom.css>
+  </head>
+
+  <body>
+  <div id='content'>
+    <h1>Coursework 1 - Adrian Vazquez</h1>
+    <p>Select the seating that you would like by clicking on the seating plan.</p>
+    <div id="widgets-left">
+      <div class="info">
+        <h2>Movie: <span id=movie></span></h2>
+        <div class="left">Date: <span id="date"></span></div>
+        <div class="left">Screen: <span id=screen></span></div>
+        <div class="left">Rating: <span id="rating"></span></div>
+        <div id="image"></div>
+      </div>
+    </div>
+
+    <div id="widgets-right">
+      <div class="customer">
+        <h2>Customer seats:</h2>
+        <div id="bookingSummary">
+          <div>Seats booked: <span id='mySeats'>0</span> of <span id='myBookings'>3</span></div>
+        </div>
+        <h3>Price: £<span class="totalPrice"></span></h3>
+        <button type="button" class="button" disabled>NEXT</button>
+        <div class="errorMsg"></div>
+      </div>
+    </div>
+
+    <div id="page">
+      <div class="cinema">
+        <h2>Select your seats:</h2>
+        <div id="theatre"></div>
+        <div id="cinema-screen">Screen</div>
+      </div>
+
+      <div class="legend">
+        <table style="width:100%">
+        <tr>
+          <th>Sofa</th>
+          <th>Armchair</th>
+          <th>Unavailable</th>
+          <th>Your Seats</th>
+        </tr>
+        <tr>
+          <td id="left-sofa-free"></td>
+          <td id="armchair-free"></td>
+          <td id="left-sofa-booked"></td>
+          <td id="left-sofa-mine"></td>
+        </tr>
+      </table>
+      </div>
+    </div>
+
+
+  </div>
+  </body>
+</html>
